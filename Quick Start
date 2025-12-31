@@ -1,0 +1,31 @@
+import 'package:flutter/material.dart';
+import 'package:flutter_multilingual_rtl_demo/localization/app_localizations.dart';
+import 'package:flutter_multilingual_rtl_demo/localization/locale_provider.dart';
+import 'package:provider/provider.dart';
+
+void main() {
+  runApp(
+    ChangeNotifierProvider(
+      create: (context) => LocaleProvider(),
+      child: const MyApp(),
+    ),
+  );
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Consumer<LocaleProvider>(
+      builder: (context, localeProvider, child) {
+        return MaterialApp(
+          locale: localeProvider.locale,
+          supportedLocales: AppLocalizations.supportedLocales,
+          localizationsDelegates: AppLocalizations.localizationsDelegates,
+          home: const HomeScreen(),
+        );
+      },
+    );
+  }
+}
