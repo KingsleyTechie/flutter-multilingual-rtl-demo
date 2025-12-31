@@ -1,0 +1,8 @@
+// Change language programmatically
+context.read<LocaleProvider>().setLocale(Locale('ar'));
+
+// Get current language
+String currentLang = context.read<LocaleProvider>().currentLanguage;
+
+// Check if RTL
+bool isRTL = context.read<LocaleProvider>().isRTL;
