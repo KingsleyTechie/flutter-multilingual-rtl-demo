@@ -1,0 +1,13 @@
+// Sync languages from admin panel
+await AdminLanguageSync.syncLanguages(
+  adminPanelUrl: 'https://admin.yourdomain.com/api/languages',
+  onLanguagesUpdated: (languages) {
+    // Update app languages
+  },
+);
+
+// Dynamic translation updates
+await DynamicTranslations.loadFromAdmin(
+  adminEndpoint: '/api/translations',
+  locale: 'ar',
+);
