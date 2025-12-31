@@ -1,0 +1,11 @@
+// In widgets
+Text(AppLocalizations.of(context)!.translate('welcome')),
+
+// With parameters
+Text(AppLocalizations.of(context)!.translateWithParams(
+  'greeting',
+  {'name': 'John'},
+)),
+
+// Direct access
+Text(context.translate('welcome')),
