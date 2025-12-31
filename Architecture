@@ -5,3 +5,24 @@ lib/
 ├── sync/                # Admin panel sync
 ├── examples/            # Usage examples
 └── utils/               # Helper utilities
+
+Contributing
+Fork the repository
+Create your feature branch
+Commit your changes
+Push to the branch
+Create a Pull Request
+
+License
+MIT License - see LICENSE file for details
+
+Support
+For issues and feature requests, please use the GitHub Issues page.
+
+
+## **lib/l10n.yaml:**
+```yaml
+arb-dir: lib/localization/arb
+template-arb-file: app_en.arb
+output-localization-file: app_localizations.dart
+output-class: AppLocalizations
