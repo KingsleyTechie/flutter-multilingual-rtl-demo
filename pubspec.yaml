@@ -1,0 +1,30 @@
+name: flutter_multilingual_rtl_demo
+description: A professional multi-language and RTL implementation package for Flutter apps with dynamic language switching and Arabic support.
+version: 1.0.0+1
+publish_to: 'none'
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+  flutter: '>=3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  intl: ^0.19.0
+  shared_preferences: ^2.2.2
+  flutter_bloc: ^8.1.2
+  equatable: ^2.0.5
+  provider: ^6.0.5
+  http: ^1.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.1
+  build_runner: ^2.4.6
+
+flutter:
+  generate: true
+  uses-material-design: true
