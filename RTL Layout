@@ -1,0 +1,18 @@
+// RTL-aware widgets
+RTLLayout(
+  child: YourWidget(),
+),
+
+// Mirror widgets for RTL
+MirrorWidget(
+  child: IconButton(
+    icon: Icon(Icons.chevron_left),
+    onPressed: () {},
+  ),
+),
+
+// RTL Text widget
+RTLText(
+  'مرحبا بكم',
+  style: TextStyle(fontSize: 16),
+),
