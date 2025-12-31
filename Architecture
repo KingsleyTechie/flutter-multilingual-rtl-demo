@@ -1,0 +1,7 @@
+lib/
+├── localization/          # Core translation system
+├── rtl/                  # RTL layout utilities
+├── providers/            # State management
+├── sync/                # Admin panel sync
+├── examples/            # Usage examples
+└── utils/               # Helper utilities
